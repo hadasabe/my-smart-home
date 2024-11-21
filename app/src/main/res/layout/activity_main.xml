@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="horizontal"
+    android:paddingLeft="25px"
+    android:paddingTop="50px"
+    android:paddingRight="25px"
+    android:paddingBottom="50px">
+
+    <TextView
+        android:id="@+id/title_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Мой дом"
+        android:textColor="@color/white_text"
+        android:textSize="34sp" />
+
+
+</LinearLayout>
