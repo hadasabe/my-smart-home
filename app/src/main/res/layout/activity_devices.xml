@@ -1,67 +1,242 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/black"
-    android:orientation="vertical"
-    android:paddingLeft="25dp"
-    android:paddingTop="50dp"
-    android:paddingRight="25dp"
-    android:paddingBottom="50dp">
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:background="@color/black"-->
+<!--    android:orientation="vertical"-->
+<!--    android:paddingLeft="25dp"-->
+<!--    android:paddingTop="50dp"-->
+<!--    android:paddingRight="25dp"-->
+<!--    android:paddingBottom="50dp">-->
 
-    <TextView
-        android:id="@+id/title_devices"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Добавить устройство"
-        android:textColor="@color/white_text"
-        android:textSize="34sp" />
+<!--    <TextView-->
+<!--        android:id="@+id/title_devices"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:text="Добавить устройство"-->
+<!--        android:textColor="@color/white_text"-->
+<!--        android:textSize="34sp" />-->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="5dp">
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="50dp"-->
+<!--        android:orientation="horizontal">-->
 
-        <Button
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/rounded_button"
-            android:padding="0px"
-            android:layout_marginRight="3dp"
-            android:text="?"
-            android:textColor="#000000"
-            android:textSize="15sp" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="30dp"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:background="@color/white"-->
+<!--            >-->
 
-        <TextView
-            android:id="@+id/help_devices"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/help_text"
-            android:textColor="@color/white_text"
-            android:textSize="15sp"
-            android:layout_margin="0dp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="20sp"-->
+<!--                android:text="?"/>-->
 
-    </LinearLayout>
+<!--        </LinearLayout>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="16sp"-->
+<!--            android:textColor="@color/white_text"-->
+<!--            android:text="@string/devices_help_text"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <GridLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:columnCount="2"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginRight="60dp"-->
+<!--                android:layout_marginBottom="40dp"-->
+<!--                android:layout_width="150dp">-->
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:gravity="center"-->
+<!--                    android:orientation="vertical">-->
 
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_weight="1" />
+<!--                    <ImageView-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:src="@drawable/plugcharging" />-->
 
-        <Button
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_weight="1" />
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Умная \nрозетка"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textSize="16sp" />-->
 
-    </LinearLayout>
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginBottom="40dp"-->
+<!--                android:layout_width="150dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:src="@drawable/lamppendant"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="Умная \nлампочка"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginBottom="40dp"-->
+<!--                android:layout_width="150dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:src="@drawable/streamline_smoke_detector"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="Датчик \nдыма"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginBottom="40dp"-->
+<!--                android:layout_width="150dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:background="@color/white"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:src="@drawable/mdi_curtains"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="Умные \nзанавески"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginBottom="40dp"-->
+<!--                android:layout_width="150dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:src="@drawable/monitorplay"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="Умный \nтелевизор"/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginBottom="40dp"-->
+<!--                android:layout_width="150dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="vertical"-->
+<!--                    android:gravity="center">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="70dp"-->
+<!--                        android:layout_height="70dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:src="@drawable/material_symbols_iron"/>-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:textSize="16sp"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:text="Умный \nутюг "/>-->
+
+<!--                </LinearLayout>-->
+
+<!--            </androidx.cardview.widget.CardView>-->
 
 
 
-</LinearLayout>
+<!--        </GridLayout>-->
+
+<!--    </ScrollView>-->
+<!--</LinearLayout>-->
+

@@ -13,17 +13,41 @@
         android:theme="@style/Theme.Ai_ai_ai_podnobral_kondiciy"
         tools:targetApi="31">
         <activity
-            android:name=".devices"
+            android:name=".activity_garmony"
+            android:exported="false" />
+        <activity
+            android:name=".activity_new_rooms"
+            android:exported="false" />
+        <activity
+            android:name=".activity_family_evening"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity_devices"
+            android:exported="false" />
+        <activity
+            android:name=".activity_bathroom"
+            android:exported="false" />
+        <activity
+            android:name=".activity_bedroom"
+            android:exported="false" />
+        <activity
+            android:name=".activity_scenarios"
+            android:exported="false" />
+        <activity
+            android:name=".activity_rooms"
+            android:exported="false" />
+        <activity
+            android:name=".devices"
+            android:exported="false" />
     </application>
 
 </manifest>

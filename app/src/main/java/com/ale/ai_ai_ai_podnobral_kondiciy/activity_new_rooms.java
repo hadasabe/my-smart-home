@@ -8,11 +8,12 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class devices extends AppCompatActivity {
+public class activity_new_rooms extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_devices);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_new_rooms);
     }
 }
