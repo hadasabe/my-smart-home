@@ -13,6 +13,7 @@
     <TextView
         android:id="@+id/title_devices"
         android:layout_width="match_parent"
+        android:textStyle="bold"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Семейный вечер"
@@ -28,7 +29,8 @@
             android:id="@+id/c_tv"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginRight="40dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="30dp"
             android:layout_marginBottom="40dp">
 
             <LinearLayout
@@ -48,6 +50,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textStyle="bold"
                     android:text="Умный \nтелевизор"
                     android:textAlignment="center"
                     android:textSize="16sp" />
@@ -60,6 +63,7 @@
             android:id="@+id/c_marus"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
             android:layout_marginBottom="40dp">
 
             <LinearLayout
@@ -79,6 +83,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textStyle="bold"
                     android:text="Маруся"
                     android:textAlignment="center"
                     android:textSize="16sp" />
@@ -91,6 +96,7 @@
             android:id="@+id/c_lamp"
             android:layout_height="150dp"
             android:layout_marginBottom="40dp"
+            app:cardCornerRadius="20dp"
             android:layout_width="150dp">
 
             <LinearLayout
@@ -112,6 +118,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     android:text="Умная \nлампочка"/>
 
@@ -123,6 +130,7 @@
             android:id="@+id/c_hot"
             android:layout_height="150dp"
             android:layout_marginBottom="40dp"
+            app:cardCornerRadius="20dp"
             android:layout_width="150dp">
 
             <LinearLayout
@@ -142,9 +150,74 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textStyle="bold"
                     android:textSize="16sp"
                     android:textAlignment="center"
                     android:text="Тёплый \nпол"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/plus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Добавить \nустройсто"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/minus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Удалить \nустройсто"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
 
             </LinearLayout>
 

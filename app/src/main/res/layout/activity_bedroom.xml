@@ -14,6 +14,7 @@
         android:id="@+id/title_devices"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textStyle="bold"
         android:layout_marginBottom="20dp"
         android:text="Спальня"
         android:textColor="@color/white_text"
@@ -65,8 +66,9 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
+            app:cardCornerRadius="20dp"
             android:layout_height="150dp"
-            android:layout_marginRight="40dp"
+            android:layout_marginRight="30dp"
             android:layout_marginBottom="40dp">
 
             <LinearLayout
@@ -86,6 +88,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Розетка V453"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -95,6 +98,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
+            app:cardCornerRadius="20dp"
             android:layout_height="150dp"
             android:layout_marginBottom="40dp">
 
@@ -116,6 +120,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Модуль FIBARO"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -125,6 +130,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
             android:layout_marginBottom="40dp"
             android:layout_width="150dp">
 
@@ -145,6 +151,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     android:text="Умная \nлампочка"/>
 
@@ -154,6 +161,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
             android:layout_marginBottom="40dp"
             android:layout_width="150dp">
 
@@ -174,6 +182,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     android:text="Кондиционер"/>
 

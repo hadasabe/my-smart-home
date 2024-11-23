@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black"
     android:orientation="vertical"
     android:paddingTop="40dp"
@@ -14,21 +15,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Мой дом"
-
+        android:textStyle="bold"
         android:layout_marginBottom="50dp"
         android:textColor="@color/white_text"
         android:textSize="34sp" />
 
     <GridLayout
+        android:id="@+id/grid_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:useDefaultMargins="false"
         android:columnCount="2">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_add"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_marginRight="60dp"
+            android:layout_marginRight="30dp"
+            app:cardCornerRadius="20dp"
             android:onClick="goDevices"
             android:layout_marginBottom="40dp"
             android:background="@color/white" >
@@ -50,8 +54,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
+                    android:textStyle="bold"
                     android:textSize="16sp"
-                    android:text="Добавить устройство"/>
+                    android:text="Устройства"/>
 
             </LinearLayout>
 
@@ -61,6 +66,7 @@
             android:id="@+id/main_go_room"
             android:layout_width="150dp"
             android:onClick="goRooms"
+            app:cardCornerRadius="20dp"
             android:layout_height="150dp"
             android:background="@color/white" >
 
@@ -81,8 +87,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
+                    android:textStyle="bold"
                     android:textSize="16sp"
-                    android:text="Добавить \nкомнату"/>
+                    android:text="Комнаты"/>
 
             </LinearLayout>
 
@@ -92,6 +99,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:onClick="goScenarios"
+            app:cardCornerRadius="20dp"
             android:background="@color/white" >
 
             <LinearLayout
@@ -112,7 +120,8 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
                     android:textSize="16sp"
-                    android:text="Добавить \nсценарий"/>
+                    android:textStyle="bold"
+                    android:text="Сценарии"/>
 
             </LinearLayout>
 
@@ -162,7 +171,6 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:onClick="goHome"
                     android:src="@drawable/house" />
 
             </androidx.cardview.widget.CardView>

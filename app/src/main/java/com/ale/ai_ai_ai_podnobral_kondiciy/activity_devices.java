@@ -1,24 +1,4 @@
-//package com.ale.ai_ai_ai_podnobral_kondiciy;
-//
-//import android.os.Bundle;
-//
-//import androidx.activity.EdgeToEdge;
-//import androidx.appcompat.app.AppCompatActivity;
-//import androidx.core.graphics.Insets;
-//import androidx.core.view.ViewCompat;
-//import androidx.core.view.WindowInsetsCompat;
-//
-//public class activity_devices extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        EdgeToEdge.enable(this);
-//        setContentView(R.layout.activity_devices);
-//    }
-//}
-
-
+package com.ale.ai_ai_ai_podnobral_kondiciy;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -51,18 +31,18 @@ public class activity_devices extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUEST = 1;
     private Uri imageUri;
     private ImageView dialogImageView; // Ссылка на ImageView в диалоговом окне
-    private GridLayout gridLayout; // Ссылка на GridLayout
+    private GridLayout grid2; // Ссылка на GridLayout
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_devices);
 
-        // Инициализация GridLayout
-        gridLayout = findViewById(R.id.grid_layout);
+        grid2 = findViewById(R.id.grid2);
 
-        CardView cardAdd = findViewById(R.id.card_add);
+        CardView cardAdd = findViewById(R.id.card_add2);
         cardAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +50,7 @@ public class activity_devices extends AppCompatActivity {
             }
         });
     }
+
 
     private void showAddItemDialog() {
         View dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_add_item, null);
@@ -84,9 +65,9 @@ public class activity_devices extends AppCompatActivity {
                     String text = editText.getText().toString();
                     if (!text.isEmpty() && imageUri != null) {
                         addItemToGrid(text, imageUri);
-                        Toast.makeText(MainActivity.this, "Элемент добавлен: " + text, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(activity_devices.this, "Элемент добавлен: " + text, Toast.LENGTH_SHORT).show();
                     } else {
-                        Toast.makeText(MainActivity.this, "Пожалуйста, введите текст и выберите изображение", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(activity_devices.this, "Пожалуйста, введите текст и выберите изображение", Toast.LENGTH_SHORT).show();
                     }
                 })
                 .setNegativeButton("Отмена", (dialogInterface, which) -> dialogInterface.dismiss())
@@ -120,10 +101,9 @@ public class activity_devices extends AppCompatActivity {
         }
     }
 
-
     private void addItemToGrid(String text, Uri imageUri) {
         // Создаем новый CardView
-        CardView newCardView = (CardView) LayoutInflater.from(this).inflate(R.layout.card_item, gridLayout, false);
+        CardView newCardView = (CardView) LayoutInflater.from(this).inflate(R.layout.card_items, grid2, false);
 
         // Настройка TextView и ImageView внутри CardView
         TextView cardTextView = newCardView.findViewById(R.id.card_text);
@@ -133,6 +113,21 @@ public class activity_devices extends AppCompatActivity {
         cardImageView.setImageURI(imageUri);
 
         // Добавляем новый CardView в GridLayout
-        gridLayout.addView(newCardView);
+        grid2.addView(newCardView);
+    }
+
+    public void goDevices(View v){
+        Intent i = new Intent(this, activity_devices.class);
+        startActivity(i);
+    }
+
+    public void goHome(View v){
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+    }
+
+    public void goScenarios(View v){
+        Intent i = new Intent(this, activity_scenarios.class);
+        startActivity(i);
     }
 }

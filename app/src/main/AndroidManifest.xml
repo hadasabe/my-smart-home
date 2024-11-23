@@ -13,23 +13,26 @@
         android:theme="@style/Theme.Ai_ai_ai_podnobral_kondiciy"
         tools:targetApi="31">
         <activity
-            android:name=".activity_garmony"
+            android:name=".activity_feed_homepets"
             android:exported="false" />
         <activity
-            android:name=".activity_new_rooms"
+            android:name=".activity_garmony"
             android:exported="false" />
         <activity
             android:name=".activity_family_evening"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activity_devices"
+            android:exported="false" />
         <activity
             android:name=".activity_devices"
             android:exported="false" />
@@ -44,9 +47,6 @@
             android:exported="false" />
         <activity
             android:name=".activity_rooms"
-            android:exported="false" />
-        <activity
-            android:name=".devices"
             android:exported="false" />
     </application>
 

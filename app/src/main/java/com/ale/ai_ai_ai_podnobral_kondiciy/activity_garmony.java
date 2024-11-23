@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,8 +34,10 @@ public class activity_garmony extends AppCompatActivity {
             public void onClick(View v) {
                 if (clickCountLamp % 2 == 0) {
                     linearLayoutLamp.setBackgroundColor(Color.rgb(255,66,66)); // Красный цвет
+                    Toast.makeText(activity_garmony.this, "Лампочка выключена", Toast.LENGTH_SHORT).show();
                 } else {
                     linearLayoutLamp.setBackgroundColor(Color.rgb(76,175,80)); // Зеленый цвет
+                    Toast.makeText(activity_garmony.this, "Лампочка включена", Toast.LENGTH_SHORT).show();
                 }
                 clickCountLamp++;
             }

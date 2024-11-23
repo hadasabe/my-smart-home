@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="Гармония в семье"
+        android:textStyle="bold"
         android:textColor="@color/white_text"
         android:textSize="34sp" />
 
@@ -28,6 +29,7 @@
             android:id="@+id/c_marus"
             android:layout_width="150dp"
             android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
             android:layout_marginBottom="40dp"
             android:layout_marginEnd="40dp">
 
@@ -35,7 +37,7 @@
                 android:id="@+id/l_marus"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/white"
+                android:background="@color/green"
                 android:gravity="center"
                 android:orientation="vertical">
 
@@ -49,6 +51,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Маруся"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     android:textSize="16sp" />
 
@@ -59,6 +62,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/c_lamp"
             android:layout_height="150dp"
+            app:cardCornerRadius="20dp"
             android:layout_marginBottom="40dp"
             android:layout_width="150dp">
 
@@ -68,7 +72,7 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:background="@color/white">
+                android:background="@color/green">
 
                 <ImageView
                     android:layout_width="70dp"
@@ -80,6 +84,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
+                    android:textStyle="bold"
                     android:textAlignment="center"
                     android:text="Умная \nлампочка"/>
 

@@ -31,6 +31,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -58,8 +59,10 @@ public class activity_family_evening extends AppCompatActivity {
             public void onClick(View v) {
                 if (clickCountCTV % 2 == 0) {
                     linearLayoutCTV.setBackgroundColor(Color.rgb(255,66,66)); // Красный цвет
+                    Toast.makeText(activity_family_evening.this, "Телевизор выключен", Toast.LENGTH_SHORT).show();
                 } else {
                     linearLayoutCTV.setBackgroundColor(Color.rgb(76,175,80)); // Зеленый цвет
+                    Toast.makeText(activity_family_evening.this, "Телевизор включен", Toast.LENGTH_SHORT).show();
                 }
                 clickCountCTV++;
             }
@@ -73,8 +76,10 @@ public class activity_family_evening extends AppCompatActivity {
             public void onClick(View v) {
                 if (clickCountHot % 2 == 0) {
                     linearLayoutHot.setBackgroundColor(Color.rgb(255,66,66)); // Красный цвет
+                    Toast.makeText(activity_family_evening.this, "Теплый пол выключен", Toast.LENGTH_SHORT).show();
                 } else {
                     linearLayoutHot.setBackgroundColor(Color.rgb(76,175,80)); // Зеленый цвет
+                    Toast.makeText(activity_family_evening.this, "Теплый пол включен", Toast.LENGTH_SHORT).show();
                 }
                 clickCountHot++;
             }
@@ -88,8 +93,10 @@ public class activity_family_evening extends AppCompatActivity {
             public void onClick(View v) {
                 if (clickCountLamp % 2 == 0) {
                     linearLayoutLamp.setBackgroundColor(Color.rgb(255,66,66)); // Красный цвет
+                    Toast.makeText(activity_family_evening.this, "Лампочка выключена", Toast.LENGTH_SHORT).show();
                 } else {
                     linearLayoutLamp.setBackgroundColor(Color.rgb(76,175,80)); // Зеленый цвет
+                    Toast.makeText(activity_family_evening.this, "Лампочка включена", Toast.LENGTH_SHORT).show();
                 }
                 clickCountLamp++;
             }
@@ -103,8 +110,10 @@ public class activity_family_evening extends AppCompatActivity {
             public void onClick(View v) {
                 if (clickCountMarusa % 2 == 0) {
                     linearLayoutMarusa.setBackgroundColor(Color.rgb(255,66,66)); // Красный цвет
+                    Toast.makeText(activity_family_evening.this, "Голосовой помощник выключен", Toast.LENGTH_SHORT).show();
                 } else {
                     linearLayoutMarusa.setBackgroundColor(Color.rgb(76,175,80)); // Зеленый цвет
+                    Toast.makeText(activity_family_evening.this, "Голосовой помощник выключен", Toast.LENGTH_SHORT).show();
                 }
                 clickCountMarusa++;
             }
